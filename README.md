@@ -1,3 +1,4 @@
+<span style="color:blue"> Этот текст голубой.</span>
 # Clock module in console :clock1:
 
 ### Language and module:
