@@ -9,7 +9,9 @@
 
 ### Preview: 
 ![](https://github.com/titanilham/clock_module_in_console-/blob/main/Preview1.png?raw=true)
+
 ![](https://github.com/titanilham/clock_module_in_console-/blob/main/Preview3.png?raw=true)
+
 ![](https://github.com/titanilham/clock_module_in_console-/blob/main/Preview2.png?raw=true)
 
 ### Function call: 
@@ -41,5 +43,3 @@ Clock.only_time()
     <img src="https://img.icons8.com/?size=512&id=13983&format=png"width="40" height="40" />
   </a>
 </div>
-
-
