@@ -34,6 +34,7 @@ class Clock:
             
             tprint(clock)
             time.sleep(x)
+            print("\033[H\033[J")
     
     def only_time_second():
         
@@ -57,6 +58,7 @@ class Clock:
             
             tprint(clock)
             time.sleep(1)
+            print("\033[H\033[J")
 
 
     def word_clock(): 
@@ -159,6 +161,7 @@ class Clock:
             )
             print("\n" * ((lines - 12) // 2 - 3))
             time.sleep(15)
+            print("\033[H\033[J")
 
 
 class Stopwatch:
@@ -182,6 +185,7 @@ class Stopwatch:
             stopwatch += 1
 
             time.sleep(1)
+            print("\033[H\033[J")
 
 
 Clock.word_clock()
