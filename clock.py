@@ -187,9 +187,17 @@ class Stopwatch:
             time.sleep(1)
             print("\033[H\033[J")
 
-
-Clock.word_clock()
+class Timer:
+    
+    """Timer"""
+    
+    def timer(x=0):
+        while x != 0:
+            print(Fore.MAGENTA)
+            tprint(str(x))
+            x -= 1
+            time.sleep(1)
+            print("\033[H\033[J")
         
 
-
-
+Clock.only_time_second()
