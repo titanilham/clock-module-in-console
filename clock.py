@@ -4,7 +4,7 @@ from datetime import datetime
 import time
 from colorama import Fore, Back, Style
 import shutil
-
+import calendar 
 
 class Clock:
     
@@ -199,6 +199,31 @@ class Timer:
             x -= 1
             time.sleep(1)
             print("\033[H\033[J")
-        
 
+class Calend:
+    def calend_table():
+        while True:
+            present = datetime.now()
+
+            # year
+            yy =  int(str(datetime.now()).split("-")[0])
+
+            # month
+            mm = int(str(datetime.now()).split("-")[1])
+
+            # day
+            d = present.day
+            d_color = (Style.BRIGHT + Fore.GREEN + str(d))
+
+
+            calend = calendar.month(yy, mm)
+            calend = calend.replace(str(d), d_color + Style.RESET_ALL + Fore.MAGENTA)
+            print("\033[H\033[J")
+            print(Fore.MAGENTA)
+            
+            print(calend)
+            time.sleep(3600)       
+        
 Clock.only_time_second()
+
+
