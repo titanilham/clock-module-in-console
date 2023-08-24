@@ -217,13 +217,12 @@ class Calend:
 
 
             calend = calendar.month(yy, mm)
-            calend = calend.replace(str(d), d_color + Style.RESET_ALL + Fore.MAGENTA)
+            calend = calend.replace(str(d), d_color + Style.RESET_ALL + Fore.MAGENTA + Style.BRIGHT)
+            print(Fore.MAGENTA + Style.BRIGHT)
             print("\033[H\033[J")
-            print(Fore.MAGENTA)
-            
             print(calend)
             time.sleep(3600)       
-        
+
 Clock.only_time_second()
 
 
