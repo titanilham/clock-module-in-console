@@ -212,7 +212,7 @@ class Calend:
             mm = int(str(datetime.now()).split("-")[1])
 
             # day
-            d = present.day
+            d = (f" {present.day} ")
             d_color = (Style.BRIGHT + Fore.GREEN + str(d))
 
 
@@ -222,7 +222,5 @@ class Calend:
             print("\033[H\033[J")
             print(calend)
             time.sleep(3600)       
-
-Clock.only_time_second()
-
-
+        
+Calend.calend_table()
