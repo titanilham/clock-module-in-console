@@ -5,6 +5,7 @@ import time
 from colorama import Fore, Back, Style
 import shutil
 import calendar 
+from plyer import notification
 
 class Clock:
     
@@ -199,6 +200,11 @@ class Timer:
             x -= 1
             time.sleep(1)
             print("\033[H\033[J")
+        
+        notification.notify(
+            title = "Clock", 
+            message="Time has passed")
+
 
 class Calend:
     def calend_table():
@@ -223,4 +229,4 @@ class Calend:
             print(calend)
             time.sleep(3600)       
         
-Calend.calend_table()
+Clock.only_time_second()
