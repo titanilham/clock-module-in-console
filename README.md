@@ -36,6 +36,10 @@ Clock.only_time()
 Calend.calend_table()
 ```
 
+```python
+Timer.timer(second)
+```
+
 
 ----
 
