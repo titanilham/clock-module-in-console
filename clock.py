@@ -201,9 +201,7 @@ class Timer:
             time.sleep(1)
             print("\033[H\033[J")
         
-        notification.notify(
-            title = "Clock", 
-            message="Time has passed")
+        
 
 
 class Calend:
