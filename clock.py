@@ -193,11 +193,13 @@ class Timer:
     
     """Timer"""
     
-    def timer(x=0):
-        while x != 0:
+    def timer(sec=0, min=0):
+        if min > 0:
+            sec = min*60 + sec
+        while sec != 0:
             print(Fore.MAGENTA)
-            tprint(str(x))
-            x -= 1
+            tprint(str(sec))
+            sec -= 1
             time.sleep(1)
             print("\033[H\033[J")
         
