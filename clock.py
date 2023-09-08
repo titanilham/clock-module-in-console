@@ -196,7 +196,7 @@ class Timer:
     def timer(sec=0, min=0):
         if min > 0:
             sec = min*60 + sec
-        while sec != 0:
+        while sec > 0:
             print(Fore.MAGENTA)
             tprint(str(sec))
             sec -= 1
