@@ -37,7 +37,7 @@ Calend.calend_table()
 ```
 
 ```python
-Timer.timer(second)
+Timer.timer(sec, min)
 ```
 
 
