@@ -220,7 +220,7 @@ class Calend:
             mm = int(str(datetime.now()).split("-")[1])
 
             # day
-            d = (f" {present.day} ")
+            d = (f"{present.day}")
             d_color = (Style.BRIGHT + Fore.GREEN + str(d))
 
 
