@@ -220,15 +220,18 @@ class Calend:
             mm = int(str(datetime.now()).split("-")[1])
 
             # day
-            d = (f"{present.day}")
-            d_color = (Style.BRIGHT + Fore.GREEN + str(d))
+            
+            d = str(f" {present.day} ")
+            d_color = (Style.BRIGHT + Fore.GREEN + d)
 
 
             calend = calendar.month(yy, mm)
-            calend = calend.replace(str(d), d_color + Style.RESET_ALL + Fore.MAGENTA + Style.BRIGHT)
+            
+            calend = calend.replace(d, d_color + Style.RESET_ALL + Fore.MAGENTA + Style.BRIGHT)
+            
             print(Fore.MAGENTA + Style.BRIGHT)
             print("\033[H\033[J")
             print(calend)
             time.sleep(3600)       
         
-Clock.only_time_second()
+Calend.calend_table()
