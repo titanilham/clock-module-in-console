@@ -1,0 +1,5 @@
+art==6.0
+colorama==0.4.6
+plyer==2.1.0
+
+
