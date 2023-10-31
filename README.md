@@ -1,4 +1,4 @@
-# Clock module in console :clock1:
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=30&pause=1000&color=F075B7&background=0071FF00&random=false&width=435&lines=Clock+module+in+console+)](https://git.io/typing-svg) :clock1:
 
 ### Languages and modules:
 
