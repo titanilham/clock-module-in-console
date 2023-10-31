@@ -1,4 +1,8 @@
-![](https://readme-typing-svg.demolab.com?font=Chakra+Petch&weight=500&size=30&pause=1000&color=F075B7&background=0071FF00&random=false&width=435&lines=Clock+module+in+console)
+<div align="center">
+
+<strong> <a href="https://readme-typing-svg.demolab.com?font=Chakra+Petch&weight=500&size=30&pause=1000&color=F075B7&background=0071FF00&random=false&width=435&lines=Clock+module+in+console"></a> </strong>
+
+</div>
 ### Languages and modules:
 
 * [Python](https://www.python.org/) <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/python/python-original.svg" width="15" height="15"/>
