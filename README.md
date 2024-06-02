@@ -21,6 +21,12 @@
 
 ![](https://github.com/titanilham/clock_module_in_console-/blob/main/Preview_calendar.png)
 
+### Module installation:
+
+```
+pip install -r requirements.txt
+```
+
 ### Function call: 
 
 ```python
