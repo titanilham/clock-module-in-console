@@ -11,10 +11,12 @@ class Clock:
     
     """Console time"""
     
-    def only_time():
+    def only_time(color='MAGENTA'):
        
         """Time in console, hours and minutes"""
-       
+
+        color = color.upper()
+        
         while True:
             
             clock = datetime.now()
@@ -32,15 +34,17 @@ class Clock:
 
             clock = clock[0] + ":" + clock[1]
             
-            print(Fore.MAGENTA)
+            print(eval(f"Fore.{color}"))
             
             tprint(clock)
             time.sleep(x)
             print("\033[H\033[J")
     
-    def only_time_second():
+    def only_time_second(color='MAGENTA'):
         
         """Console time, hours, minutes and seconds"""
+    
+        color = color.upper()
         
         while True:
             
@@ -56,7 +60,8 @@ class Clock:
 
             clock = clock[0] + ":" + clock[1] + ":" + clock[2]
             
-            print(Fore.MAGENTA)
+            # print(f"Fore.{color}")
+            print(eval(f"Fore.{color}"))
             
             tprint(clock)
             time.sleep(1)
@@ -170,11 +175,15 @@ class Stopwatch:
     
     """Stopwatch"""
     
-    def stopwatch(stopwatch=0):
+    def stopwatch(stopwatch=0, color='MAGENTA'):
+        
+        color = color.upper()
+        
         minut = 0
         
         while True:
-            print(Fore.MAGENTA)
+            
+            print(eval(f"Fore.{color}"))
             
             tprint( str(minut)+ ":" + str(stopwatch))
 
@@ -193,11 +202,14 @@ class Timer:
     
     """Timer"""
     
-    def timer(sec=0, min=0):
+    def timer(sec=5, min=0, color="MAGENTA"):
+        
+        color = color.upper()
+        
         if min > 0:
             sec = min*60 + sec
         while sec > 0:
-            print(Fore.MAGENTA)
+            print(eval(f"Fore.{color}"))
             tprint(str(sec))
             sec -= 1
             time.sleep(1)
@@ -209,7 +221,11 @@ class Timer:
 
 
 class Calend:
-    def calend_table():
+    def calend_table(color="MAGENTA", accent="GREEN"):
+        
+        color = color.upper() 
+        accent = color.upper()
+        
         while True:
             present = datetime.now()
 
@@ -222,16 +238,18 @@ class Calend:
             # day
             
             d = str(f" {present.day} ")
-            d_color = (Style.BRIGHT + Fore.GREEN + d)
+            d_color = (Style.BRIGHT + eval(f"Fore.{accent}") + d)
 
 
             calend = calendar.month(yy, mm)
             
-            calend = calend.replace(d, d_color + Style.RESET_ALL + Fore.MAGENTA + Style.BRIGHT)
+            calend = calend.replace(d, d_color + Style.RESET_ALL + eval(f"Fore.{color}") + Style.BRIGHT)
             
-            print(Fore.MAGENTA + Style.BRIGHT)
+            print(eval(f"Fore.{color}") + Style.BRIGHT)
             print("\033[H\033[J")
             print(calend)
             time.sleep(3600)       
-        
-Calend.calend_table()
+            
+            
+if __name__ == "__main__":
+   Clock.only_time_second()
