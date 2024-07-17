@@ -34,19 +34,19 @@ Clock.word_clock()
 ```
 
 ```python
-Clock.only_time_second()
+Clock.only_time_second(color)
 ```
 
 ```python
-Clock.only_time()
+Clock.only_time(color)
 ```
 
 ```python
-Calend.calend_table()
+Calend.calend_table(color, accent)
 ```
 
 ```python
-Timer.timer(sec, min)
+Timer.timer(sec, min, color)
 ```
 
 
