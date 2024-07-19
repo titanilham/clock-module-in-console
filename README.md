@@ -21,6 +21,12 @@
 
 ![](https://github.com/titanilham/clock_module_in_console-/blob/main/Preview_calendar.png)
 
+### Install repository:
+
+```
+git clone https://github.com/titanilham/clock-module-in-console.git
+```
+
 ### Module installation:
 
 ```
