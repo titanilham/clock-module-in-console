@@ -59,9 +59,6 @@ Timer.timer(sec, min, color)
 ----
 
 <div id="badges">
-  <a href="https://vk.com/aniime_guy" >
-    <img src="https://img.icons8.com/?size=512&id=13977&format=png"width="40" height="40" title="VK"/>
-  </a>
   <a href="https://t.me/Ilham06">
     <img src="https://img.icons8.com/?size=512&id=63306&format=png"width="40" height="40" title="Telegram"/>
   </a> 
